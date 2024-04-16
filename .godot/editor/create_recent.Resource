@@ -1,0 +1,14 @@
+EffectResourceRemoveEffect
+ConditionalResourceHasEffect
+EffectResourceAddEffect
+TriggerResourceAbilityCast
+ValueFinderResource
+DurationResource
+EffectResource
+ValueFinderResourceGiven
+ValueFinderResourceEntityStatModified
+EffectResourceEntityStatChange
+AbilityResourceChainable
+MathOperationResource
+AbilityResource
+Resource

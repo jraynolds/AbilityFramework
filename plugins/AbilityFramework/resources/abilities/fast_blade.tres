@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=3 format=3 uid="uid://dypivy2oaixbm"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/abilities/ability_resource.gd" id="1_slrxh"]
+[ext_resource type="Resource" uid="uid://5nw817mcu2o8" path="res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_1x.tres" id="2_jeryh"]
+
+[resource]
+script = ExtResource("1_slrxh")
+title = "Fast Blade"
+effects = Array[Resource("res://plugins/AbilityFramework/resources/effects/effect_resource.gd")]([ExtResource("2_jeryh")])
+cooldown_type = 0

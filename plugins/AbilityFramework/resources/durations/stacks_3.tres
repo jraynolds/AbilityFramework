@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="DurationResource" load_steps=2 format=3 uid="uid://c73isscn2o6f6"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/durations/duration_resource.gd" id="1_0nvbn"]
+
+[resource]
+script = ExtResource("1_0nvbn")
+duration_type = 0
+duration = 3.0

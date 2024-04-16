@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ValueGivenFinderResource" load_steps=2 format=3 uid="uid://cdiurx81gkpxf"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_given.gd" id="1_of8wo"]
+
+[resource]
+script = ExtResource("1_of8wo")
+value = 1.5

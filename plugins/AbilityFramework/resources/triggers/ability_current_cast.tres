@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="TriggerResourceAbilityCast" load_steps=3 format=3 uid="uid://duaj6bb25v3so"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/triggers/trigger_resource_ability_cast.gd" id="1_nr3td"]
+[ext_resource type="Resource" uid="uid://vf5irw67k8dp" path="res://plugins/AbilityFramework/resources/target_finder/ability_current.tres" id="1_y1m15"]
+
+[resource]
+script = ExtResource("1_nr3td")
+ability_finder = ExtResource("1_y1m15")

@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="TargetFinderResourceAbilityCasting" load_steps=2 format=3 uid="uid://vf5irw67k8dp"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/target_finder/target_finder_resource_ability_current.gd" id="1_71vmc"]
+
+[resource]
+script = ExtResource("1_71vmc")
+entity_target = 0

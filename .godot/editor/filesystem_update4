@@ -1,0 +1,15 @@
+res://plugins/AbilityFramework/managers/debug_manager.tscn
+res://plugins/AbilityFramework/resources/conditionals/conditional_resource_has_effect.gd
+res://plugins/AbilityFramework/resources/entities/entity_component_effects.gd
+res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_0pt7x.tres
+res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_1pt5x.tres
+res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_1x.tres
+res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_2x.tres
+res://plugins/AbilityFramework/resources/effects/on_cast_caster_mana_add_1000.tres
+res://plugins/AbilityFramework/resources/effects/sword_oath.tres
+res://plugins/AbilityFramework/resources/effects/on_cast_caster_add_sword_oath.tres
+res://plugins/AbilityFramework/resources/abilities/atonement.tres
+res://plugins/AbilityFramework/resources/abilities/royal_authority.tres
+res://plugins/AbilityFramework/resources/abilities/ability_resource.gd
+res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_3x.tres
+res://plugins/AbilityFramework/resources/effects/on_cast_caster_remove_sword_oath_stack.tres

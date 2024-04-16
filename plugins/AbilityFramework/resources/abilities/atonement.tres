@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=5 format=3 uid="uid://by0h4tscs2d1l"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/abilities/ability_resource.gd" id="1_61lbb"]
+[ext_resource type="Resource" uid="uid://b7835qviub11r" path="res://plugins/AbilityFramework/resources/conditionals/caster_has_sword_oath.tres" id="1_132pe"]
+[ext_resource type="Resource" uid="uid://csco5fmda5uj4" path="res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_3x.tres" id="2_f84st"]
+[ext_resource type="Resource" uid="uid://xxcmc2vx0il3" path="res://plugins/AbilityFramework/resources/effects/on_cast_caster_remove_sword_oath_stack.tres" id="3_6q8xx"]
+
+[resource]
+script = ExtResource("1_61lbb")
+title = "Atonement"
+effects = Array[Resource("res://plugins/AbilityFramework/resources/effects/effect_resource.gd")]([ExtResource("2_f84st"), ExtResource("3_6q8xx")])
+cooldown_type = 0
+conditionals = Array[Resource("res://plugins/AbilityFramework/resources/conditionals/conditional_resource.gd")]([ExtResource("1_132pe")])

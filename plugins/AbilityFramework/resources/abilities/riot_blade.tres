@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AbilityResourceChainable" load_steps=6 format=3 uid="uid://dxypk8pl84uss"]
+
+[ext_resource type="Resource" uid="uid://c76yi7pn1n20r" path="res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_1pt5x.tres" id="1_60108"]
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/abilities/ability_resource_chainable.gd" id="1_wc3ri"]
+[ext_resource type="Resource" uid="uid://bpj0kvha8ctqr" path="res://plugins/AbilityFramework/resources/effects/on_cast_caster_mana_add_1000.tres" id="2_xq7s1"]
+[ext_resource type="Resource" uid="uid://dypivy2oaixbm" path="res://plugins/AbilityFramework/resources/abilities/fast_blade.tres" id="3_m8n6d"]
+[ext_resource type="Resource" uid="uid://cutg3jmjambsu" path="res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_0pt7x.tres" id="5_6y7rk"]
+
+[resource]
+script = ExtResource("1_wc3ri")
+chaining_abilities = Array[Resource("res://plugins/AbilityFramework/resources/abilities/ability_resource.gd")]([ExtResource("3_m8n6d")])
+chained_effects = Array[Resource("res://plugins/AbilityFramework/resources/effects/effect_resource.gd")]([ExtResource("1_60108"), ExtResource("2_xq7s1")])
+chained_behavior = 0
+title = "Riot Blade"
+effects = Array[Resource("res://plugins/AbilityFramework/resources/effects/effect_resource.gd")]([ExtResource("5_6y7rk")])
+cooldown_type = 0

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ValueFinderResourceEntityStatModified" load_steps=4 format=3 uid="uid://bt2tjubvkrfwk"]
+
+[ext_resource type="Resource" uid="uid://cdibies61rhi6" path="res://plugins/AbilityFramework/resources/value_finder/3.tres" id="1_r3mxk"]
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_entity_stat_modified.gd" id="2_34hfn"]
+[ext_resource type="Resource" uid="uid://gvpcc0dna72g" path="res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres" id="3_12dmb"]
+
+[resource]
+script = ExtResource("2_34hfn")
+modifier = ExtResource("1_r3mxk")
+stat = 4
+target_finder = ExtResource("3_12dmb")

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="EffectResourceEntityStatChange" load_steps=6 format=3 uid="uid://cknxu13g0q8gt"]
+
+[ext_resource type="Resource" uid="uid://bb3u5kllx3408" path="res://plugins/AbilityFramework/resources/math_operations/subtract.tres" id="1_1re4h"]
+[ext_resource type="Resource" uid="uid://cl2g4yrqf0ema" path="res://plugins/AbilityFramework/resources/value_finder/caster_attack_2x.tres" id="1_3jguh"]
+[ext_resource type="Resource" uid="uid://duaj6bb25v3so" path="res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres" id="2_pwp1j"]
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/effects/effect_resource_entity_stat_change.gd" id="2_x8mua"]
+[ext_resource type="Resource" uid="uid://c5itlqgbntic7" path="res://plugins/AbilityFramework/resources/target_finder/entity_target.tres" id="2_yfkkj"]
+
+[resource]
+script = ExtResource("2_x8mua")
+stat = 1
+operation = ExtResource("1_1re4h")
+change_amount_additions = Array[Resource("res://plugins/AbilityFramework/resources/value_finder/value_finder_resource.gd")]([ExtResource("1_3jguh")])
+title = "Deal 2x Attack damage"
+stack_behavior = 0
+durations = Array[Resource("res://plugins/AbilityFramework/resources/durations/duration_resource.gd")]([])
+end_on_any_duration = true
+end_behavior = 0
+triggers = Array[Resource("res://plugins/AbilityFramework/resources/triggers/trigger_resource.gd")]([ExtResource("2_pwp1j")])
+conditionals = Array[Resource("res://plugins/AbilityFramework/resources/conditionals/conditional_resource.gd")]([])
+target_finder = ExtResource("2_yfkkj")

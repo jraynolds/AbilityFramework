@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="DurationResource" load_steps=2 format=3 uid="uid://dcd41yextfind"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/durations/duration_resource.gd" id="1_xvdov"]
+
+[resource]
+script = ExtResource("1_xvdov")
+duration_type = 1
+duration = 20.0

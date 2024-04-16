@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="MathOperationResource" load_steps=2 format=3 uid="uid://bb3u5kllx3408"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/math_operations/math_operation_resource.gd" id="1_spfih"]
+
+[resource]
+script = ExtResource("1_spfih")
+operation = 1

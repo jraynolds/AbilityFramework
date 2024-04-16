@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="AbilityResourceChainable" load_steps=6 format=3 uid="uid://dx2s7pxqbq2gc"]
+
+[ext_resource type="Resource" uid="uid://cknxu13g0q8gt" path="res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_2x.tres" id="1_8bwrc"]
+[ext_resource type="Resource" uid="uid://dxypk8pl84uss" path="res://plugins/AbilityFramework/resources/abilities/riot_blade.tres" id="1_jaxkd"]
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/abilities/ability_resource_chainable.gd" id="1_lc0q5"]
+[ext_resource type="Resource" uid="uid://bsalin0tunxgm" path="res://plugins/AbilityFramework/resources/effects/on_cast_caster_add_sword_oath.tres" id="2_omoxq"]
+[ext_resource type="Resource" uid="uid://cutg3jmjambsu" path="res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_0pt7x.tres" id="2_ye47u"]
+
+[resource]
+script = ExtResource("1_lc0q5")
+chaining_abilities = Array[Resource("res://plugins/AbilityFramework/resources/abilities/ability_resource.gd")]([ExtResource("1_jaxkd")])
+chained_effects = Array[Resource("res://plugins/AbilityFramework/resources/effects/effect_resource.gd")]([ExtResource("1_8bwrc"), ExtResource("2_omoxq")])
+chained_behavior = 0
+title = "Royal Authority"
+effects = Array[Resource("res://plugins/AbilityFramework/resources/effects/effect_resource.gd")]([ExtResource("2_ye47u")])
+cooldown_type = 0
+conditionals = Array[Resource("res://plugins/AbilityFramework/resources/conditionals/conditional_resource.gd")]([])

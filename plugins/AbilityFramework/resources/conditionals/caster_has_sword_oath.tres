@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="ConditionalResourceHasEffect" load_steps=2 format=3 uid="uid://b7835qviub11r"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/conditionals/conditional_resource_has_effect.gd" id="1_3wx7l"]
+
+[resource]
+script = ExtResource("1_3wx7l")

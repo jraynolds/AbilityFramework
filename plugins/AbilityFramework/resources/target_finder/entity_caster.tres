@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="TargetEntityFinderResource" load_steps=2 format=3 uid="uid://gvpcc0dna72g"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/target_finder/target_finder_resource_entity.gd" id="1_2hxek"]
+
+[resource]
+script = ExtResource("1_2hxek")
