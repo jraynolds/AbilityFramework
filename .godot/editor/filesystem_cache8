@@ -1,68 +1,117 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713265367
+::res://::1714137261
 icon.svg::CompressedTexture2D::2183953346937930846::1713095608::1713095620::1::::<><>::
+README.md::TextFile::-1::1713266257::0::1::::<><>::
 ::res://plugins/::1713095809
-::res://plugins/AbilityFramework/::1713265283
-stats_resource.gd::GDScript::-1::1713104381::0::1::::StatsResource<>Resource<>::
-transform_layer_resource.gd::GDScript::-1::1713258087::0::1::::TransformLayerResource<>Resource<>::
+::res://plugins/AbilityFramework/::1714113393
+transform_layer_resource.gd::GDScript::-1::1713602144::0::1::::TransformLayerResource<>Resource<>::
 transform_math_layer_resource.gd::GDScript::-1::1713258078::0::1::::TransformLayerResourceMath<>TransformLayerResource<>::
-::res://plugins/AbilityFramework/managers/::1713265554
-combat_manager.gd::GDScript::-1::1713128193::0::1::::<>Node<>::
-combat_manager.tscn::PackedScene::1117739766382074800::1713127073::0::1::::<><>::res://plugins/AbilityFramework/managers/combat_manager.gd
-debug_manager.gd::GDScript::-1::1713128714::0::1::::<>Node<>::
-debug_manager.tscn::PackedScene::5504296642319585016::1713265978::0::1::::<><>::res://plugins/AbilityFramework/managers/debug_manager.gd
-game_manager.gd::GDScript::-1::1713127182::0::1::::<>Node<>::
-game_manager.tscn::PackedScene::8962208712415936241::1713127493::0::1::::<><>::res://plugins/AbilityFramework/managers/game_manager.gd
-::res://plugins/AbilityFramework/resources/::1713265146
-::res://plugins/AbilityFramework/resources/abilities/::1713265064
-ability.gd::GDScript::-1::1713126767::0::1::::Ability<>Node<>::
-ability_resource.gd::GDScript::-1::1713265979::0::1::::AbilityResource<>Resource<>::
-ability_resource_chainable.gd::GDScript::-1::1713255646::0::1::::AbilityResourceChainable<>AbilityResource<>::
-atonement.tres::Resource/AbilityResource::4123040207696102595::1713265979::0::1::::<><>::res://plugins/AbilityFramework/resources/abilities/ability_resource.gd
+::res://plugins/AbilityFramework/grid/::1714137245
+ability_container.gd::GDScript::-1::1714135528::0::1::::AbilityContainer<>VBoxContainer<>::
+ability_container.tscn::PackedScene::3601347225686363042::1714136677::0::1::::<><>::res://plugins/AbilityFramework/grid/ability_slot.gd<>res://plugins/AbilityFramework/grid/ability_container.gd<>uid://u3jv220xv30s::::res://plugins/AbilityFramework/textures/ability icons/fast blade.png<>res://plugins/AbilityFramework/grid/ability_rect.gd<>uid://b0k54hvw4hcqe::::res://plugins/AbilityFramework/grid/ability_info_hover.tscn
+ability_container_castable.gd::GDScript::-1::1714135875::0::1::::AbilityContainerCastable<>AbilityContainer<>::
+ability_container_castable.tscn::PackedScene::3235985603212940142::1714137245::0::1::::<><>::uid://brkrwsassy8li::::res://plugins/AbilityFramework/grid/ability_container.tscn<>uid://clnj7sjl5qw07::::res://plugins/AbilityFramework/grid/textures/Dashed line transparent.png<>res://plugins/AbilityFramework/grid/ability_container_castable.gd<>res://plugins/AbilityFramework/grid/shaders/scrolling_texture.gdshader<>uid://u1fjpe527x7s::::res://plugins/AbilityFramework/grid/textures/White small.png
+ability_info_hover.gd::GDScript::-1::1714135218::0::1::::AbilityInfoHover<>Node2D<>::
+ability_info_hover.tscn::PackedScene::4163659251133699124::1714078586::0::1::::<><>::res://plugins/AbilityFramework/grid/ability_info_hover.gd
+ability_rect.gd::GDScript::-1::1714078550::0::1::::AbilityRect<>TextureRect<>::
+ability_rect.tscn::PackedScene::2941488122636415638::1714078291::0::1::::<><>::res://plugins/AbilityFramework/grid/ability_rect.gd
+ability_slot.gd::GDScript::-1::1714078195::0::1::::AbilitySlot<>PanelContainer<>::
+ability_slot.tscn::PackedScene::8093296834438071274::1714110722::0::1::::<><>::res://plugins/AbilityFramework/grid/ability_slot.gd
+ability_slot_grid.gd::GDScript::-1::1714112191::0::1::::AbilityGrid<>GridContainer<>::
+ability_slot_grid.tscn::PackedScene::7310904180287545811::1714112369::0::1::::<><>::res://plugins/AbilityFramework/grid/ability_slot_grid.gd<>res://plugins/AbilityFramework/grid/ability_container.gd
+::res://plugins/AbilityFramework/grid/resources/::1714111294
+0.tres::Resource/Resource::297906726455089866::1714111016::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+1.tres::Resource/Resource::7208503978160663628::1714110947::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+2.tres::Resource/Resource::4748505698924774331::1714110968::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+3.tres::Resource/Resource::2168691415436230238::1714110977::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+4.tres::Resource/Resource::5411144374920616470::1714110995::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+5.tres::Resource/Resource::156933903835655619::1714110999::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+6.tres::Resource/Resource::7932136510245705366::1714111003::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+7.tres::Resource/Resource::1219270673212354207::1714111191::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+8.tres::Resource/Resource::1461420103004756577::1714111191::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+9.tres::Resource/Resource::1487713664239147931::1714111191::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+key_combo_resource.gd::GDScript::-1::1714110936::0::1::::KeyComboResource<>Resource<>::
+shift+0.tres::Resource/Resource::9176175929739722953::1714111293::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+shift+1.tres::Resource/Resource::1909790657147108866::1714111294::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+shift+2.tres::Resource/Resource::2325822405103351899::1714111294::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+shift+3.tres::Resource/Resource::538584888977800103::1714111294::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+shift+4.tres::Resource/Resource::5477411471782899205::1714111294::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+shift+5.tres::Resource/Resource::7501863249879537070::1714111294::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+shift+6.tres::Resource/Resource::3148295264172039283::1714111294::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+shift+7.tres::Resource/Resource::2711447539534453178::1714111294::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+shift+8.tres::Resource/Resource::2140823641281588046::1714111294::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+shift+9.tres::Resource/Resource::3435534799473843226::1714111294::0::1::::<><>::res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd
+::res://plugins/AbilityFramework/grid/shaders/::1714135946
+ability_container.gdshader::Shader::-1::1714135940::0::1::::<><>::
+scrolling_texture.gdshader::Shader::-1::1714135940::0::1::::<><>::
+::res://plugins/AbilityFramework/grid/textures/::1714135874
+Dashed line transparent.png::CompressedTexture2D::5572360116411267530::1714135849::1714135874::1::::<><>::
+White small.png::CompressedTexture2D::1457771146905077278::1714135866::1714135874::1::::<><>::
+::res://plugins/AbilityFramework/managers/::1714039775
+combat_manager.gd::GDScript::-1::1713600365::0::1::::<>Node<>::
+combat_manager.tscn::PackedScene::1117739766382074800::1714039775::0::1::::<><>::res://plugins/AbilityFramework/managers/combat_manager.gd
+debug_manager.gd::GDScript::-1::1713603963::0::1::::<>Node<>::
+debug_manager.tscn::PackedScene::5504296642319585016::1714039775::0::1::::<><>::res://plugins/AbilityFramework/managers/debug_manager.gd
+game_manager.gd::GDScript::-1::1713603909::0::1::::<>Node<>::
+game_manager.tscn::PackedScene::8962208712415936241::1714039775::0::1::::<><>::res://plugins/AbilityFramework/managers/game_manager.gd<>uid://clism5bboueja::::res://plugins/AbilityFramework/resources/entities/player.tres<>uid://bmk8hv7sb45m8::::res://plugins/AbilityFramework/scenes/entity.tscn<>uid://cfp87dta1eoco::::res://plugins/AbilityFramework/resources/entities/enemy.tres
+::res://plugins/AbilityFramework/resources/::1713322361
+::res://plugins/AbilityFramework/resources/abilities/::1714137179
+ability.gd::GDScript::-1::1714135437::0::1::::Ability<>Node<>::
+ability_resource.gd::GDScript::-1::1714137179::0::1::::AbilityResource<>Resource<>::
+ability_resource_chainable.gd::GDScript::-1::1714137140::0::1::::AbilityResourceChainable<>AbilityResource<>::
+atonement.tres::Resource/Resource::4123040207696102595::1713439201::0::1::::<><>::res://plugins/AbilityFramework/resources/abilities/ability_resource.gd<>uid://b7835qviub11r::::res://plugins/AbilityFramework/resources/conditionals/caster_has_sword_oath.tres<>uid://csco5fmda5uj4::::res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_3x.tres<>uid://xxcmc2vx0il3::::res://plugins/AbilityFramework/resources/effects/on_cast_caster_remove_sword_oath_stack.tres
 fast_blade.tres::Resource/Resource::8875284505223671242::1713258805::0::1::::<><>::res://plugins/AbilityFramework/resources/abilities/ability_resource.gd<>uid://5nw817mcu2o8::::res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_1x.tres
 riot_blade.tres::Resource/Resource::8824080890669701854::1713258790::0::1::::<><>::uid://c76yi7pn1n20r::::res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_1pt5x.tres<>res://plugins/AbilityFramework/resources/abilities/ability_resource_chainable.gd<>uid://bpj0kvha8ctqr::::res://plugins/AbilityFramework/resources/effects/on_cast_caster_mana_add_1000.tres<>uid://dypivy2oaixbm::::res://plugins/AbilityFramework/resources/abilities/fast_blade.tres<>uid://cutg3jmjambsu::::res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_0pt7x.tres
-royal_authority.tres::Resource/AbilityResourceChainable::8830494529498132106::1713265979::0::1::::<><>::uid://cknxu13g0q8gt::::res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_2x.tres<>uid://dxypk8pl84uss::::res://plugins/AbilityFramework/resources/abilities/riot_blade.tres<>res://plugins/AbilityFramework/resources/abilities/ability_resource_chainable.gd<>uid://bsalin0tunxgm::::res://plugins/AbilityFramework/resources/effects/on_cast_caster_add_sword_oath.tres<>uid://cutg3jmjambsu::::res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_0pt7x.tres
-::res://plugins/AbilityFramework/resources/conditionals/::1713265579
+royal_authority.tres::Resource/Resource::8830494529498132106::1713439201::0::1::::<><>::uid://cknxu13g0q8gt::::res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_2x.tres<>uid://dxypk8pl84uss::::res://plugins/AbilityFramework/resources/abilities/riot_blade.tres<>res://plugins/AbilityFramework/resources/abilities/ability_resource_chainable.gd<>uid://bsalin0tunxgm::::res://plugins/AbilityFramework/resources/effects/on_cast_caster_add_sword_oath.tres<>uid://cutg3jmjambsu::::res://plugins/AbilityFramework/resources/effects/on_cast_target_health_subtract_attack_0pt7x.tres
+::res://plugins/AbilityFramework/resources/conditionals/::1713321725
+caster_has_sword_oath.tres::Resource/Resource::4702342668813493237::1713321725::0::1::::<><>::res://plugins/AbilityFramework/resources/conditionals/conditional_resource_has_effect.gd<>uid://dfeual3noiux0::::res://plugins/AbilityFramework/resources/effects/sword_oath.tres<>uid://gvpcc0dna72g::::res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres
 conditional_resource.gd::GDScript::-1::1713099994::0::1::::ConditionalResource<>Resource<>::
 conditional_resource_has_effect.gd::GDScript::-1::1713265510::0::1::::ConditionalResourceHasEffect<>ConditionalResource<>::
 conditional_resource_values_comparison.gd::GDScript::-1::1713258132::0::1::::ConditionalResourceValuesComparison<>ConditionalResource<>::
-caster_has_sword_oath.tres::Resource/ConditionalResourceHasEffect::4702342668813493237::1713265579::0::1::::<><>::res://plugins/AbilityFramework/resources/conditionals/conditional_resource_has_effect.gd
-::res://plugins/AbilityFramework/resources/durations/::1713261199
-duration.gd::GDScript::-1::1713105295::0::1::::Duration<>Node<>::
+::res://plugins/AbilityFramework/resources/durations/::1713602386
+duration.gd::GDScript::-1::1713602386::0::1::::Duration<>Node<>::
 duration_resource.gd::GDScript::-1::1713260984::0::1::::DurationResource<>Resource<>::
 seconds_20.tres::Resource/Resource::7307641362859534485::1713261199::0::1::::<><>::res://plugins/AbilityFramework/resources/durations/duration_resource.gd
 stacks_3.tres::Resource/Resource::7077205770286571269::1713261199::0::1::::<><>::res://plugins/AbilityFramework/resources/durations/duration_resource.gd
-::res://plugins/AbilityFramework/resources/effects/::1713265064
-effect.gd::GDScript::-1::1713264959::0::1::::Effect<>Node<>::
-effect_resource.gd::GDScript::-1::1713264977::0::1::::EffectResource<>Resource<>::
+::res://plugins/AbilityFramework/resources/effects/::1713602284
+effect.gd::GDScript::-1::1713602270::0::1::::Effect<>Node<>::
+effect_resource.gd::GDScript::-1::1713602284::0::1::::EffectResource<>Resource<>::
 effect_resource_ability_stat_change.gd::GDScript::-1::1713251234::0::1::::EffectAbilityStatChangeResource<>EffectResource<>::
-effect_resource_add_effect.gd::GDScript::-1::1713264476::0::1::::EffectResourceAddEffect<>EffectResource<>::
-effect_resource_add_transform_layer.gd::GDScript::-1::1713100734::0::1::::EffectResourceAddTransformLayer<>EffectResource<>::
-effect_resource_entity_stat_change.gd::GDScript::-1::1713254864::0::1::::EffectResourceEntityStatChange<>EffectResource<>::
+effect_resource_add_effect.gd::GDScript::-1::1713320523::0::1::::EffectResourceAddEffect<>EffectResource<>::
+effect_resource_duration.gd::GDScript::-1::1713321374::0::1::::EffectResourceDuration<>EffectResource<>::
+effect_resource_duration_add_transform_layer.gd::GDScript::-1::1713321017::0::1::::EffectResourceDurationAddTransformLayer<>EffectResourceDuration<>::
+effect_resource_entity_stat_change.gd::GDScript::-1::1713320595::0::1::::EffectResourceEntityStatChange<>EffectResource<>::
 effect_resource_remove_effect.gd::GDScript::-1::1713264804::0::1::::EffectResourceRemoveEffect<>EffectResource<>::
 effect_resource_remove_transform_layer.gd::GDScript::-1::1713105425::0::1::::EffectResourceRemoveTransformLayer<>EffectResource<>::
-on_cast_caster_add_sword_oath.tres::Resource/EffectResourceAddEffect::3650502764763554044::1713265932::0::1::::<><>::res://plugins/AbilityFramework/resources/effects/effect_resource_add_effect.gd<>uid://dlvwjeu5ga3rv::::res://plugins/AbilityFramework/resources/effects/sword_oath.tres<>uid://gvpcc0dna72g::::res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres
-on_cast_caster_mana_add_1000.tres::Resource/EffectResourceEntityStatChange::3459369634656519517::1713265932::0::1::::<><>::uid://bwvtchqhvybl7::::res://plugins/AbilityFramework/resources/value_finder/1000.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource_entity_stat_change.gd<>uid://dvirjal7ggpeo::::res://plugins/AbilityFramework/resources/math_operations/add.tres<>uid://gvpcc0dna72g::::res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres
-on_cast_target_health_subtract_attack_0pt7x.tres::Resource/EffectResourceEntityStatChange::6216256213317117948::1713265931::0::1::::<><>::uid://siovqyvo0ho5::::res://plugins/AbilityFramework/resources/value_finder/caster_attack_0pt7x.tres<>uid://bb3u5kllx3408::::res://plugins/AbilityFramework/resources/math_operations/subtract.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource_entity_stat_change.gd<>uid://c5itlqgbntic7::::res://plugins/AbilityFramework/resources/target_finder/entity_target.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres
-on_cast_target_health_subtract_attack_1pt5x.tres::Resource/EffectResourceEntityStatChange::7084353272901944887::1713265931::0::1::::<><>::uid://bfhs5nf8twtce::::res://plugins/AbilityFramework/resources/value_finder/caster_attack_1pt5x.tres<>uid://bb3u5kllx3408::::res://plugins/AbilityFramework/resources/math_operations/subtract.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource_entity_stat_change.gd<>uid://c5itlqgbntic7::::res://plugins/AbilityFramework/resources/target_finder/entity_target.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres
-on_cast_target_health_subtract_attack_1x.tres::Resource/EffectResourceEntityStatChange::2133898340573033001::1713265931::0::1::::<><>::uid://bd2cbuuo6hi5i::::res://plugins/AbilityFramework/resources/value_finder/caster_attack_1x.tres<>uid://bb3u5kllx3408::::res://plugins/AbilityFramework/resources/math_operations/subtract.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource_entity_stat_change.gd<>uid://c5itlqgbntic7::::res://plugins/AbilityFramework/resources/target_finder/entity_target.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres
-on_cast_target_health_subtract_attack_2x.tres::Resource/EffectResourceEntityStatChange::5503000330449345203::1713265932::0::1::::<><>::uid://bb3u5kllx3408::::res://plugins/AbilityFramework/resources/math_operations/subtract.tres<>uid://cl2g4yrqf0ema::::res://plugins/AbilityFramework/resources/value_finder/caster_attack_2x.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource_entity_stat_change.gd<>uid://c5itlqgbntic7::::res://plugins/AbilityFramework/resources/target_finder/entity_target.tres
-on_cast_target_health_subtract_attack_3x.tres::Resource/EffectResourceEntityStatChange::6041273201386694511::1713266016::0::1::::<><>::uid://cl2g4yrqf0ema::::res://plugins/AbilityFramework/resources/value_finder/caster_attack_2x.tres<>uid://bb3u5kllx3408::::res://plugins/AbilityFramework/resources/math_operations/subtract.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource_entity_stat_change.gd<>uid://c5itlqgbntic7::::res://plugins/AbilityFramework/resources/target_finder/entity_target.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres
-sword_oath.tres::Resource/EffectResource::7976043352279523559::1713265932::0::1::::<><>::uid://dcd41yextfind::::res://plugins/AbilityFramework/resources/durations/seconds_20.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource.gd<>uid://cdibies61rhi6::::res://plugins/AbilityFramework/resources/value_finder/3.tres
-::res://plugins/AbilityFramework/resources/entities/::1713265554
-entity.gd::GDScript::-1::1713254891::0::1::::Entity<>Node<>::
-entity_component.gd::GDScript::-1::1713103182::0::1::::EntityComponent<>Node<>::
-entity_component_abilities.gd::GDScript::-1::1713262566::0::1::::EntityComponentAbilities<>EntityComponent<>::
-entity_component_effects.gd::GDScript::-1::1713265554::0::1::::EntityComponentEffects<>EntityComponent<>::
-entity_component_stats.gd::GDScript::-1::1713254820::0::1::::EntityComponentStats<>EntityComponent<>::
-entity_component_transform_layers.gd::GDScript::-1::1713255000::0::1::::EntityComponentTransformLayers<>EntityComponent<>::
-entity_resource.gd::GDScript::-1::1713103119::0::1::::EntityResource<>Resource<>::
+on_cast_caster_add_sword_oath.tres::Resource/Resource::3650502764763554044::1713439201::0::1::::<><>::res://plugins/AbilityFramework/resources/effects/effect_resource_add_effect.gd<>uid://dfeual3noiux0::::res://plugins/AbilityFramework/resources/effects/sword_oath.tres<>uid://gvpcc0dna72g::::res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres
+on_cast_caster_mana_add_1000.tres::Resource/Resource::3459369634656519517::1713439201::0::1::::<><>::uid://bwvtchqhvybl7::::res://plugins/AbilityFramework/resources/value_finder/1000.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource_entity_stat_change.gd<>uid://dvirjal7ggpeo::::res://plugins/AbilityFramework/resources/math_operations/add.tres<>uid://gvpcc0dna72g::::res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres
+on_cast_caster_remove_sword_oath_stack.tres::Resource/Resource::1661967103272802762::1713266105::0::1::::<><>::res://plugins/AbilityFramework/resources/effects/effect_resource_remove_effect.gd<>uid://dlvwjeu5ga3rv::::res://plugins/AbilityFramework/resources/effects/sword_oath.tres<>uid://gvpcc0dna72g::::res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres
+on_cast_target_health_subtract_attack_0pt7x.tres::Resource/Resource::6216256213317117948::1713439201::0::1::::<><>::uid://siovqyvo0ho5::::res://plugins/AbilityFramework/resources/value_finder/caster_attack_0pt7x.tres<>uid://bb3u5kllx3408::::res://plugins/AbilityFramework/resources/math_operations/subtract.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource_entity_stat_change.gd<>uid://c5itlqgbntic7::::res://plugins/AbilityFramework/resources/target_finder/entity_target.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres
+on_cast_target_health_subtract_attack_1pt5x.tres::Resource/Resource::7084353272901944887::1713439201::0::1::::<><>::uid://bfhs5nf8twtce::::res://plugins/AbilityFramework/resources/value_finder/caster_attack_1pt5x.tres<>uid://bb3u5kllx3408::::res://plugins/AbilityFramework/resources/math_operations/subtract.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource_entity_stat_change.gd<>uid://c5itlqgbntic7::::res://plugins/AbilityFramework/resources/target_finder/entity_target.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres
+on_cast_target_health_subtract_attack_1x.tres::Resource/Resource::2133898340573033001::1713439201::0::1::::<><>::uid://bd2cbuuo6hi5i::::res://plugins/AbilityFramework/resources/value_finder/caster_attack_1x.tres<>uid://bb3u5kllx3408::::res://plugins/AbilityFramework/resources/math_operations/subtract.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource_entity_stat_change.gd<>uid://c5itlqgbntic7::::res://plugins/AbilityFramework/resources/target_finder/entity_target.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres
+on_cast_target_health_subtract_attack_2x.tres::Resource/Resource::5503000330449345203::1713439201::0::1::::<><>::uid://bb3u5kllx3408::::res://plugins/AbilityFramework/resources/math_operations/subtract.tres<>uid://cl2g4yrqf0ema::::res://plugins/AbilityFramework/resources/value_finder/caster_attack_2x.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource_entity_stat_change.gd<>uid://c5itlqgbntic7::::res://plugins/AbilityFramework/resources/target_finder/entity_target.tres
+on_cast_target_health_subtract_attack_3x.tres::Resource/Resource::6041273201386694511::1713439201::0::1::::<><>::uid://bt2tjubvkrfwk::::res://plugins/AbilityFramework/resources/value_finder/caster_attack_3x.tres<>uid://bb3u5kllx3408::::res://plugins/AbilityFramework/resources/math_operations/subtract.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource_entity_stat_change.gd<>uid://c5itlqgbntic7::::res://plugins/AbilityFramework/resources/target_finder/entity_target.tres<>uid://duaj6bb25v3so::::res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres
+sword_oath.tres::Resource/Resource::7519678741762116279::1713439201::0::1::::<><>::uid://dcd41yextfind::::res://plugins/AbilityFramework/resources/durations/seconds_20.tres<>uid://cdibies61rhi6::::res://plugins/AbilityFramework/resources/value_finder/3.tres<>res://plugins/AbilityFramework/resources/effects/effect_resource_duration.gd<>uid://gvpcc0dna72g::::res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres
+::res://plugins/AbilityFramework/resources/entities/::1713603678
+enemy.tres::Resource/Resource::5156812245009763210::1713439201::0::1::::<><>::uid://dypivy2oaixbm::::res://plugins/AbilityFramework/resources/abilities/fast_blade.tres<>uid://dxypk8pl84uss::::res://plugins/AbilityFramework/resources/abilities/riot_blade.tres<>uid://dx2s7pxqbq2gc::::res://plugins/AbilityFramework/resources/abilities/royal_authority.tres<>uid://by0h4tscs2d1l::::res://plugins/AbilityFramework/resources/abilities/atonement.tres<>res://plugins/AbilityFramework/resources/entities/entity_resource.gd<>uid://33vq0lauvgqx::::res://plugins/AbilityFramework/resources/stats/player.tres
+entity.gd::GDScript::-1::1713603678::0::1::::Entity<>Node<>::
+entity_component.gd::GDScript::-1::1713603402::0::1::::EntityComponent<>Node<>::
+entity_component_abilities.gd::GDScript::-1::1713603443::0::1::::EntityComponentAbilities<>EntityComponent<>::
+entity_component_effects.gd::GDScript::-1::1713603491::0::1::::EntityComponentEffects<>EntityComponent<>::
+entity_component_stats.gd::GDScript::-1::1713603486::0::1::::EntityComponentStats<>EntityComponent<>::
+entity_component_transform_layers.gd::GDScript::-1::1713603449::0::1::::EntityComponentTransformLayers<>EntityComponent<>::
+entity_resource.gd::GDScript::-1::1713602221::0::1::::EntityResource<>Resource<>::
 entity_stat.gd::GDScript::-1::1713104938::0::1::::EntityStat<>Node<>::
+player.tres::Resource/Resource::5562549582143935522::1713439201::0::1::::<><>::res://plugins/AbilityFramework/resources/entities/entity_resource.gd<>uid://dypivy2oaixbm::::res://plugins/AbilityFramework/resources/abilities/fast_blade.tres<>uid://dxypk8pl84uss::::res://plugins/AbilityFramework/resources/abilities/riot_blade.tres<>uid://dx2s7pxqbq2gc::::res://plugins/AbilityFramework/resources/abilities/royal_authority.tres<>uid://by0h4tscs2d1l::::res://plugins/AbilityFramework/resources/abilities/atonement.tres<>uid://bicxk3ob0abqu::::res://plugins/AbilityFramework/resources/stats/enemy.tres
 ::res://plugins/AbilityFramework/resources/math_operations/::1713249505
 add.tres::Resource/Resource::8650791068987688866::1713249213::0::1::::<><>::res://plugins/AbilityFramework/resources/math_operations/math_operation_resource.gd
 math_operation_resource.gd::GDScript::-1::1713150289::0::1::::MathOperationResource<>Resource<>::
 multiply.tres::Resource/Resource::9097426351571392344::1713249173::0::1::::<><>::res://plugins/AbilityFramework/resources/math_operations/math_operation_resource.gd
 subtract.tres::Resource/Resource::2515680560875293655::1713249505::0::1::::<><>::res://plugins/AbilityFramework/resources/math_operations/math_operation_resource.gd
+::res://plugins/AbilityFramework/resources/stats/::1713602205
+enemy.tres::Resource/Resource::2953476029438068712::1713322336::0::1::::<><>::uid://b6k52jkhli0lc::::res://plugins/AbilityFramework/resources/value_finder/20.tres<>uid://d1d05vyfc7que::::res://plugins/AbilityFramework/resources/value_finder/2pt5.tres<>uid://cpm8ttevlxati::::res://plugins/AbilityFramework/resources/value_finder/200.tres<>uid://ddddg3y60me8l::::res://plugins/AbilityFramework/resources/value_finder/1.tres<>res://plugins/AbilityFramework/resources/stats/stats_resource.gd
+player.tres::Resource/Resource::2024395158633316343::1713322135::0::1::::<><>::res://plugins/AbilityFramework/resources/stats/stats_resource.gd<>uid://b6k52jkhli0lc::::res://plugins/AbilityFramework/resources/value_finder/20.tres<>uid://d1d05vyfc7que::::res://plugins/AbilityFramework/resources/value_finder/2pt5.tres<>uid://cpm8ttevlxati::::res://plugins/AbilityFramework/resources/value_finder/200.tres<>uid://ddddg3y60me8l::::res://plugins/AbilityFramework/resources/value_finder/1.tres
+stats_resource.gd::GDScript::-1::1713602205::0::1::::StatsResource<>Resource<>::
 ::res://plugins/AbilityFramework/resources/target_finder/::1713263200
 ability_current.tres::Resource/Resource::1486124329637553833::1713263195::0::1::::<><>::res://plugins/AbilityFramework/resources/target_finder/target_finder_resource_ability_current.gd
 entity_caster.tres::Resource/Resource::465399464963283596::1713254525::0::1::::<><>::res://plugins/AbilityFramework/resources/target_finder/target_finder_resource_entity.gd
@@ -78,7 +127,7 @@ trigger_resource.gd::GDScript::-1::1713105606::0::1::::TriggerResource<>Resource
 trigger_resource_ability_cast.gd::GDScript::-1::1713263219::0::1::::TriggerResourceAbilityCast<>TriggerResource<>::
 trigger_resource_effect_activation.gd::GDScript::-1::1713261558::0::1::::TriggerResourceEffectActivation<>TriggerResource<>::
 trigger_resource_tick.gd::GDScript::-1::1713105642::0::1::::TriggerTickResource<>TriggerResource<>::
-::res://plugins/AbilityFramework/resources/value_finder/::1713265127
+::res://plugins/AbilityFramework/resources/value_finder/::1713322135
 0pt7.tres::Resource/Resource::2187161129217551374::1713261867::0::1::::<><>::res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_given.gd
 1.tres::Resource/Resource::7376216090168802381::1713261867::0::1::::<><>::res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_given.gd
 1pt5.tres::Resource/Resource::5001168878889839231::1713261867::0::1::::<><>::res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_given.gd
@@ -86,14 +135,44 @@ trigger_resource_tick.gd::GDScript::-1::1713105642::0::1::::TriggerTickResource<
 2pt5.tres::Resource/Resource::8991937757863418668::1713261867::0::1::::<><>::res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_given.gd
 3.tres::Resource/Resource::4999998163020582611::1713261867::0::1::::<><>::res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_given.gd
 20.tres::Resource/Resource::4584788828722415660::1713261867::0::1::::<><>::res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_given.gd
+200.tres::Resource/Resource::5852485150943510166::1713322135::0::1::::<><>::res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_given.gd
 1000.tres::Resource/Resource::3975084763742818954::1713261867::0::1::::<><>::res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_given.gd
 caster_attack_0pt7x.tres::Resource/Resource::1280802625510546526::1713261867::0::1::::<><>::uid://cdiurx81gkpxf::::res://plugins/AbilityFramework/resources/value_finder/1pt5.tres<>res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_entity_stat_modified.gd<>uid://gvpcc0dna72g::::res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres
 caster_attack_1pt5x.tres::Resource/Resource::2752962717901844692::1713261867::0::1::::<><>::uid://siovqyvo0ho5::::res://plugins/AbilityFramework/resources/value_finder/caster_attack_0pt7x.tres<>res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_entity_stat_modified.gd<>uid://gvpcc0dna72g::::res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres
 caster_attack_1x.tres::Resource/Resource::2652849715787148940::1713261867::0::1::::<><>::uid://ddddg3y60me8l::::res://plugins/AbilityFramework/resources/value_finder/1.tres<>res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_entity_stat_modified.gd<>uid://gvpcc0dna72g::::res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres
 caster_attack_2x.tres::Resource/Resource::5601074224300727680::1713261867::0::1::::<><>::res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_entity_stat_modified.gd<>uid://qwd1o0f74f5e::::res://plugins/AbilityFramework/resources/value_finder/2.tres<>uid://gvpcc0dna72g::::res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres
-caster_attack_3x.tres::Resource/ValueFinderResourceEntityStatModified::3776917660163026450::1713265127::0::1::::<><>::uid://cdibies61rhi6::::res://plugins/AbilityFramework/resources/value_finder/3.tres<>res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_entity_stat_modified.gd<>uid://gvpcc0dna72g::::res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres
+caster_attack_3x.tres::Resource/Resource::3776917660163026450::1713265127::0::1::::<><>::uid://cdibies61rhi6::::res://plugins/AbilityFramework/resources/value_finder/3.tres<>res://plugins/AbilityFramework/resources/value_finder/value_finder_resource_entity_stat_modified.gd<>uid://gvpcc0dna72g::::res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres
 value_finder_resource.gd::GDScript::-1::1713249761::0::1::::ValueFinderResource<>Resource<>::
 value_finder_resource_ability_stat.gd::GDScript::-1::1713254750::0::1::::ValueFinderResourceAbilityStat<>ValueFinderResource<>::
 value_finder_resource_entity_stat.gd::GDScript::-1::1713255329::0::1::::ValueFinderResourceEntityStat<>ValueFinderResource<>::
 value_finder_resource_entity_stat_modified.gd::GDScript::-1::1713255317::0::1::::ValueFinderResourceEntityStatModified<>ValueFinderResourceEntityStat<>::
 value_finder_resource_given.gd::GDScript::-1::1713254724::0::1::::ValueFinderResourceGiven<>ValueFinderResource<>::
+::res://plugins/AbilityFramework/scenes/::1714112077
+entity.tscn::PackedScene::3251347899453158249::1714039775::0::1::::<><>::res://plugins/AbilityFramework/resources/entities/entity.gd<>res://plugins/AbilityFramework/resources/entities/entity_component_abilities.gd<>res://plugins/AbilityFramework/resources/entities/entity_component_transform_layers.gd<>res://plugins/AbilityFramework/resources/entities/entity_component_stats.gd<>res://plugins/AbilityFramework/resources/entities/entity_component_effects.gd
+main.tscn::PackedScene::157727073556287951::1714112077::0::1::::<><>::
+::res://plugins/AbilityFramework/textures/::1714113400
+::res://plugins/AbilityFramework/textures/ability icons/::1714113631
+arms length.png::CompressedTexture2D::1986157793742526295::1714113620::1714113631::1::::<><>::
+atonement.png::CompressedTexture2D::6160337106824157997::1714113578::1714113630::1::::<><>::
+bulwark.png::CompressedTexture2D::4508465762521236254::1714113530::1714113630::1::::<><>::
+circle of scorn.png::CompressedTexture2D::9127451347146510761::1714113519::1714113630::1::::<><>::
+clemency.png::CompressedTexture2D::8970073664827088565::1714113550::1714113630::1::::<><>::
+confiteor.png::CompressedTexture2D::7560571609940661834::1714113584::1714113630::1::::<><>::
+divine veil.png::CompressedTexture2D::9004405382275550555::1714113544::1714113630::1::::<><>::
+fast blade.png::CompressedTexture2D::1462164865488875468::1714113405::1714113630::1::::<><>::
+fight or flight.png::CompressedTexture2D::723339039796648689::1714113411::1714113630::1::::<><>::
+goring blade.png::CompressedTexture2D::4099614950332061737::1714113538::1714113630::1::::<><>::
+hallowed ground.png::CompressedTexture2D::1688714393520130169::1714113525::1714113630::1::::<><>::
+holy sheltron.png::CompressedTexture2D::6026563911337943153::1714113590::1714113630::1::::<><>::
+holy spirit.png::CompressedTexture2D::5645186335025494129::1714113562::1714113630::1::::<><>::
+interject.png::CompressedTexture2D::2609264564394621398::1714113614::1714113630::1::::<><>::
+low blow.png::CompressedTexture2D::6032157886805053488::1714113604::1714113630::1::::<><>::
+rampart.png::CompressedTexture2D::1291015543258540244::1714113598::1714113630::1::::<><>::
+reprisal.png::CompressedTexture2D::4662217257097996026::1714113609::1714113630::1::::<><>::
+requiescat.png::CompressedTexture2D::5437236604415673020::1714113569::1714113630::1::::<><>::
+riot blade.png::CompressedTexture2D::3162792869712885425::1714113416::1714113630::1::::<><>::
+royal authority.png::CompressedTexture2D::4927705548693817675::1714113555::1714113630::1::::<><>::
+sentinel.png::CompressedTexture2D::6023561043330468377::1714113511::1714113630::1::::<><>::
+sheltron.png::CompressedTexture2D::8218343403287397560::1714113507::1714113630::1::::<><>::
+shield bash.png::CompressedTexture2D::7055898351851544128::1714113485::1714113630::1::::<><>::
+spirits within.png::CompressedTexture2D::1967307150038222831::1714113501::1714113630::1::::<><>::

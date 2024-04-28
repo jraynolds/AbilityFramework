@@ -14,3 +14,4 @@ func perform(caster: Entity, ability: Ability, effect: Effect, target: Entity):
 		stat, 
 		change_amount_summed
 	)
+

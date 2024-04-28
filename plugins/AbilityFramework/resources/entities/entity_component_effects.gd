@@ -3,10 +3,6 @@ class_name EntityComponentEffects
 
 var effects : Array[Effect]
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -16,13 +12,12 @@ func _process(delta):
 func add_effect(effect: Effect):
 	effects.append(effect)
 
-
-func remove_effect(effect: EffectResource):
+func remove_effect_resource(effect: EffectResource):
 	effects.erase(effects.filter(func(e): e.resource_base == effect).front())
 
-func remove_stack(effect: EffectResource):
+func remove_effect_resource_stack(effect: EffectResource, stacks: int=1):
 	var matching_effect = effects.filter(func(e): e.resource_base == effect).front()
-	matching_effect.remove_stack()
+	matching_effect.remove_stack(stacks)
 
-func has_effect(effect: EffectResource):
+func has_effect_resource(effect: EffectResource):
 	return effects.find(func(e): e.resource_base == effect)

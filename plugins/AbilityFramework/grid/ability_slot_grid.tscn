@@ -1,0 +1,114 @@
+[gd_scene load_steps=23 format=3 uid="uid://dcfpr2oamgjyp"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/grid/ability_slot_grid.gd" id="1_w271o"]
+[ext_resource type="PackedScene" uid="uid://bmdshe43g5t15" path="res://plugins/AbilityFramework/grid/ability_container_castable.tscn" id="2_ld8bm"]
+[ext_resource type="Resource" uid="uid://2hd8c5xvs7b7" path="res://plugins/AbilityFramework/grid/resources/shift+1.tres" id="3_a818q"]
+[ext_resource type="Resource" uid="uid://8ev7qhna262r" path="res://plugins/AbilityFramework/grid/resources/shift+2.tres" id="4_vvyrf"]
+[ext_resource type="Resource" uid="uid://hw5odc5bnxat" path="res://plugins/AbilityFramework/grid/resources/shift+3.tres" id="5_esxct"]
+[ext_resource type="Resource" uid="uid://ckbkfwxhcfcen" path="res://plugins/AbilityFramework/grid/resources/shift+4.tres" id="6_4wehh"]
+[ext_resource type="Resource" uid="uid://de47ud81c4oha" path="res://plugins/AbilityFramework/grid/resources/shift+5.tres" id="7_n4uqv"]
+[ext_resource type="Resource" uid="uid://bk4b70i5u5ahv" path="res://plugins/AbilityFramework/grid/resources/shift+6.tres" id="8_ayag0"]
+[ext_resource type="Resource" uid="uid://bevpe6ol15sd3" path="res://plugins/AbilityFramework/grid/resources/shift+7.tres" id="9_7j0fu"]
+[ext_resource type="Resource" uid="uid://5rbb12e2hhak" path="res://plugins/AbilityFramework/grid/resources/shift+8.tres" id="10_nu13i"]
+[ext_resource type="Resource" uid="uid://bo7g0ygb4syna" path="res://plugins/AbilityFramework/grid/resources/shift+9.tres" id="11_aol6r"]
+[ext_resource type="Resource" uid="uid://d30ajodso01jh" path="res://plugins/AbilityFramework/grid/resources/shift+0.tres" id="12_n84bq"]
+[ext_resource type="Resource" uid="uid://dax4aiqw8km5a" path="res://plugins/AbilityFramework/grid/resources/1.tres" id="13_lyytf"]
+[ext_resource type="Resource" uid="uid://b8whgvsbyd7ad" path="res://plugins/AbilityFramework/grid/resources/2.tres" id="14_f7va2"]
+[ext_resource type="Resource" uid="uid://55sbbtc8ect7" path="res://plugins/AbilityFramework/grid/resources/3.tres" id="15_4h5x7"]
+[ext_resource type="Resource" uid="uid://cjdg00oalagj3" path="res://plugins/AbilityFramework/grid/resources/4.tres" id="16_guk4b"]
+[ext_resource type="Resource" uid="uid://ciaxckrad5xf" path="res://plugins/AbilityFramework/grid/resources/5.tres" id="17_rdoj5"]
+[ext_resource type="Resource" uid="uid://dlanenu5c2wd7" path="res://plugins/AbilityFramework/grid/resources/6.tres" id="18_oovsv"]
+[ext_resource type="Resource" uid="uid://rmvhet7j0y2r" path="res://plugins/AbilityFramework/grid/resources/7.tres" id="19_5fnov"]
+[ext_resource type="Resource" uid="uid://u26m1f2r7pwj" path="res://plugins/AbilityFramework/grid/resources/8.tres" id="20_8h3xg"]
+[ext_resource type="Resource" uid="uid://vgworiylbbkl" path="res://plugins/AbilityFramework/grid/resources/9.tres" id="21_31e6x"]
+[ext_resource type="Resource" uid="uid://eikqlgeyvs71" path="res://plugins/AbilityFramework/grid/resources/0.tres" id="22_o1oha"]
+
+[node name="AbilitySlotGrid" type="GridContainer" node_paths=PackedStringArray("ability_containers")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 10
+script = ExtResource("1_w271o")
+ability_containers = [NodePath("AbilityContainerCastable"), NodePath("AbilityContainerCastable2"), NodePath("AbilityContainerCastable3"), NodePath("AbilityContainerCastable4"), NodePath("AbilityContainerCastable5"), NodePath("AbilityContainerCastable6"), NodePath("AbilityContainerCastable7"), NodePath("AbilityContainerCastable8"), NodePath("AbilityContainerCastable9"), NodePath("AbilityContainerCastable10"), NodePath("AbilityContainerCastable11"), NodePath("AbilityContainerCastable12"), NodePath("AbilityContainerCastable13"), NodePath("AbilityContainerCastable14"), NodePath("AbilityContainerCastable15"), NodePath("AbilityContainerCastable16"), NodePath("AbilityContainerCastable17"), NodePath("AbilityContainerCastable18"), NodePath("AbilityContainerCastable19"), NodePath("AbilityContainerCastable20")]
+
+[node name="AbilityContainerCastable" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("3_a818q")
+
+[node name="AbilityContainerCastable2" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("4_vvyrf")
+
+[node name="AbilityContainerCastable3" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("5_esxct")
+
+[node name="AbilityContainerCastable4" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("6_4wehh")
+
+[node name="AbilityContainerCastable5" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("7_n4uqv")
+
+[node name="AbilityContainerCastable6" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("8_ayag0")
+
+[node name="AbilityContainerCastable7" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("9_7j0fu")
+
+[node name="AbilityContainerCastable8" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("10_nu13i")
+
+[node name="AbilityContainerCastable9" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("11_aol6r")
+
+[node name="AbilityContainerCastable10" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("12_n84bq")
+
+[node name="AbilityContainerCastable11" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("13_lyytf")
+
+[node name="AbilityContainerCastable12" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("14_f7va2")
+
+[node name="AbilityContainerCastable13" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("15_4h5x7")
+
+[node name="AbilityContainerCastable14" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("16_guk4b")
+
+[node name="AbilityContainerCastable15" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("17_rdoj5")
+
+[node name="AbilityContainerCastable16" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("18_oovsv")
+
+[node name="AbilityContainerCastable17" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("19_5fnov")
+
+[node name="AbilityContainerCastable18" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("20_8h3xg")
+
+[node name="AbilityContainerCastable19" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("21_31e6x")
+
+[node name="AbilityContainerCastable20" parent="." instance=ExtResource("2_ld8bm")]
+layout_mode = 2
+key = ExtResource("22_o1oha")

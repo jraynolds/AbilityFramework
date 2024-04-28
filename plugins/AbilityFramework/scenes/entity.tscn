@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://bmk8hv7sb45m8"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/entities/entity.gd" id="1_hifvu"]
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/entities/entity_component_abilities.gd" id="2_ggmkk"]
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/entities/entity_component_transform_layers.gd" id="3_ucqac"]
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/entities/entity_component_stats.gd" id="4_6x8yh"]
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/entities/entity_component_effects.gd" id="5_syovq"]
+
+[node name="Entity" type="Node2D" node_paths=PackedStringArray("abilities_component", "transform_layers_component", "stats_component", "effects_component")]
+script = ExtResource("1_hifvu")
+abilities_component = NodePath("AbilitiesComponent")
+transform_layers_component = NodePath("TransformLayersComponent")
+stats_component = NodePath("StatsComponent")
+effects_component = NodePath("EffectsComponent")
+
+[node name="AbilitiesComponent" type="Node2D" parent="." node_paths=PackedStringArray("entity")]
+script = ExtResource("2_ggmkk")
+entity = NodePath("..")
+
+[node name="TransformLayersComponent" type="Node2D" parent="." node_paths=PackedStringArray("entity")]
+script = ExtResource("3_ucqac")
+entity = NodePath("..")
+
+[node name="StatsComponent" type="Node2D" parent="." node_paths=PackedStringArray("entity")]
+script = ExtResource("4_6x8yh")
+entity = NodePath("..")
+
+[node name="EffectsComponent" type="Node2D" parent="." node_paths=PackedStringArray("entity")]
+script = ExtResource("5_syovq")
+entity = NodePath("..")

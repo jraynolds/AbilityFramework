@@ -5,3 +5,6 @@ class_name EffectResourceAddEffect
 
 func perform(caster: Entity, ability: Ability, effect: Effect, target: Entity):
 	target.effects_component.add_effect(Effect.new(resource, caster, ability, target))
+
+func revert(caster: Entity, ability: Ability, effect: Effect, target: Entity):
+	target.effects_component.remove_effect_resource(resource)

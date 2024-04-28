@@ -1,3 +1,7 @@
+KeyComboResource
+StatsResource
+EntityResource
+EffectResourceDuration
 EffectResourceRemoveEffect
 ConditionalResourceHasEffect
 EffectResourceAddEffect
@@ -8,7 +12,3 @@ EffectResource
 ValueFinderResourceGiven
 ValueFinderResourceEntityStatModified
 EffectResourceEntityStatChange
-AbilityResourceChainable
-MathOperationResource
-AbilityResource
-Resource

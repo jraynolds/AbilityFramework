@@ -6,30 +6,39 @@ var resource : EffectResource
 var caster : Entity
 var ability : Ability
 var target : Entity
-var stacks: float
+var stacks: float :
+	set(val) :
+		stacks = val
+		if stacks <= 0:
+			queue_free()
 
-signal signal_effect_activated
+signal signal_activated
+signal signal_destroyed
 
-func _init(res: EffectResource, caster: Entity, ability: Ability, target: Entity):
+func _init(res: EffectResource = null, c: Entity = null, a: Ability = null, t: Entity = null):
+	if !res:
+		return
 	resource_base = res
 	resource = EffectResource.new(res)
-	self.caster = caster
-	self.ability = ability
-	self.target = target
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+	caster = c
+	ability = a
+	target = t
+	
+	_register_effects()
 
 func _register_effects():
-	pass
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+	for trigger in resource.triggers:
+		trigger.register_to_trigger(
+			caster, ability, self, target, perform
+		)
 
 func perform():
-	pass
+	resource.perform(caster, ability, self, target)
+	signal_activated.emit()
 
-func end():
-	pass
+func remove_stack(num_stacks: int = 1):
+	stacks -= num_stacks
+
+func _exit_tree():
+	resource.end(caster, ability, self, target)
+	signal_destroyed.emit()

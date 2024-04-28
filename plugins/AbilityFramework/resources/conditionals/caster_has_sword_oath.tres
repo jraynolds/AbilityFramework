@@ -1,6 +1,10 @@
-[gd_resource type="Resource" script_class="ConditionalResourceHasEffect" load_steps=2 format=3 uid="uid://b7835qviub11r"]
+[gd_resource type="Resource" script_class="ConditionalResourceHasEffect" load_steps=4 format=3 uid="uid://b7835qviub11r"]
 
 [ext_resource type="Script" path="res://plugins/AbilityFramework/resources/conditionals/conditional_resource_has_effect.gd" id="1_3wx7l"]
+[ext_resource type="Resource" uid="uid://dfeual3noiux0" path="res://plugins/AbilityFramework/resources/effects/sword_oath.tres" id="1_usqso"]
+[ext_resource type="Resource" uid="uid://gvpcc0dna72g" path="res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres" id="2_csspx"]
 
 [resource]
 script = ExtResource("1_3wx7l")
+effect_resource = ExtResource("1_usqso")
+entity_finder = ExtResource("2_csspx")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatsResource" load_steps=6 format=3 uid="uid://bicxk3ob0abqu"]
+
+[ext_resource type="Resource" uid="uid://b6k52jkhli0lc" path="res://plugins/AbilityFramework/resources/value_finder/20.tres" id="1_4tt85"]
+[ext_resource type="Resource" uid="uid://d1d05vyfc7que" path="res://plugins/AbilityFramework/resources/value_finder/2pt5.tres" id="2_gs8hy"]
+[ext_resource type="Resource" uid="uid://cpm8ttevlxati" path="res://plugins/AbilityFramework/resources/value_finder/200.tres" id="3_c45q1"]
+[ext_resource type="Resource" uid="uid://ddddg3y60me8l" path="res://plugins/AbilityFramework/resources/value_finder/1.tres" id="4_0bi4w"]
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/stats/stats_resource.gd" id="5_oq6qd"]
+
+[resource]
+script = ExtResource("5_oq6qd")
+health = ExtResource("3_c45q1")
+attack = ExtResource("1_4tt85")
+level = ExtResource("4_0bi4w")
+gcd = ExtResource("2_gs8hy")

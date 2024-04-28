@@ -1,16 +1,18 @@
-[gd_resource type="Resource" script_class="EffectResource" load_steps=4 format=3 uid="uid://dlvwjeu5ga3rv"]
+[gd_resource type="Resource" script_class="EffectResourceDuration" load_steps=5 format=3 uid="uid://dfeual3noiux0"]
 
 [ext_resource type="Resource" uid="uid://dcd41yextfind" path="res://plugins/AbilityFramework/resources/durations/seconds_20.tres" id="1_1wh53"]
-[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/effects/effect_resource.gd" id="1_x1gym"]
 [ext_resource type="Resource" uid="uid://cdibies61rhi6" path="res://plugins/AbilityFramework/resources/value_finder/3.tres" id="1_x8g3x"]
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/effects/effect_resource_duration.gd" id="2_nmvn3"]
+[ext_resource type="Resource" uid="uid://gvpcc0dna72g" path="res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres" id="4_f34jf"]
 
 [resource]
-script = ExtResource("1_x1gym")
-title = "Sword Oath"
+script = ExtResource("2_nmvn3")
 stack_behavior = 1
 durations = Array[Resource("res://plugins/AbilityFramework/resources/durations/duration_resource.gd")]([ExtResource("1_1wh53")])
 end_on_any_duration = true
 end_behavior = 1
+stacks = ExtResource("1_x8g3x")
+title = "Sword Oath"
 triggers = Array[Resource("res://plugins/AbilityFramework/resources/triggers/trigger_resource.gd")]([])
 conditionals = Array[Resource("res://plugins/AbilityFramework/resources/conditionals/conditional_resource.gd")]([])
-stacks = ExtResource("1_x8g3x")
+target_finder = ExtResource("4_f34jf")

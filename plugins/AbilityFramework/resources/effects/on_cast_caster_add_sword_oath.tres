@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="EffectResourceAddEffect" load_steps=5 format=3 uid="uid://bsalin0tunxgm"]
 
 [ext_resource type="Script" path="res://plugins/AbilityFramework/resources/effects/effect_resource_add_effect.gd" id="1_4g4qq"]
-[ext_resource type="Resource" uid="uid://dlvwjeu5ga3rv" path="res://plugins/AbilityFramework/resources/effects/sword_oath.tres" id="1_rilve"]
+[ext_resource type="Resource" uid="uid://dfeual3noiux0" path="res://plugins/AbilityFramework/resources/effects/sword_oath.tres" id="1_rilve"]
 [ext_resource type="Resource" uid="uid://gvpcc0dna72g" path="res://plugins/AbilityFramework/resources/target_finder/entity_caster.tres" id="2_rabsm"]
 [ext_resource type="Resource" uid="uid://duaj6bb25v3so" path="res://plugins/AbilityFramework/resources/triggers/ability_current_cast.tres" id="3_jh4lu"]
 
@@ -9,10 +9,6 @@
 script = ExtResource("1_4g4qq")
 resource = ExtResource("1_rilve")
 title = "Add 3 stacks of Sword Oath"
-stack_behavior = 0
-durations = Array[Resource("res://plugins/AbilityFramework/resources/durations/duration_resource.gd")]([])
-end_on_any_duration = true
-end_behavior = 0
 triggers = Array[Resource("res://plugins/AbilityFramework/resources/triggers/trigger_resource.gd")]([ExtResource("3_jh4lu")])
 conditionals = Array[Resource("res://plugins/AbilityFramework/resources/conditionals/conditional_resource.gd")]([])
 target_finder = ExtResource("2_rabsm")

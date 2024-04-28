@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="KeyComboResource" load_steps=2 format=3 uid="uid://eikqlgeyvs71"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/grid/resources/key_combo_resource.gd" id="1_eo4jc"]
+
+[resource]
+script = ExtResource("1_eo4jc")
+modifiers = Array[int]([])
+key = 0

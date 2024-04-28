@@ -13,7 +13,9 @@ var duration_left :
 
 signal signal_duration_update(duration_total: float, duration_left: float)
 
-func _init(resource: DurationResource, caster: Entity, ability: Ability, effect: Effect, target: Entity):
+func _init(resource: DurationResource = null, caster: Entity = null, ability: Ability = null, effect: Effect = null, target: Entity = null):
+	if !resource:
+		return
 	self.resource = resource
 	duration = resource.duration
 	duration_left = resource.duration

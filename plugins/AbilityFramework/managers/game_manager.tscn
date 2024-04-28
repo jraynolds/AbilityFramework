@@ -1,6 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://d0xmjd6ls7p1b"]
+[gd_scene load_steps=5 format=3 uid="uid://d0xmjd6ls7p1b"]
 
 [ext_resource type="Script" path="res://plugins/AbilityFramework/managers/game_manager.gd" id="1_qen2v"]
+[ext_resource type="Resource" uid="uid://clism5bboueja" path="res://plugins/AbilityFramework/resources/entities/player.tres" id="2_dfgs0"]
+[ext_resource type="PackedScene" uid="uid://bmk8hv7sb45m8" path="res://plugins/AbilityFramework/scenes/entity.tscn" id="2_royvc"]
+[ext_resource type="Resource" uid="uid://cfp87dta1eoco" path="res://plugins/AbilityFramework/resources/entities/enemy.tres" id="3_t5t1k"]
 
 [node name="GameManager" type="Node2D"]
 script = ExtResource("1_qen2v")
+entity_scene = ExtResource("2_royvc")
+player_resource = ExtResource("2_dfgs0")
+enemy_resource = ExtResource("3_t5t1k")

@@ -14,10 +14,10 @@ signal signal_ability_cast(ability: Ability)
 signal signal_cast_time_update(cast_total: float, cast_left: float)
 signal signal_cooldown_update(cooldown_total: float, cooldown_left: float)
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
 
+func _connect_signals():
+	signal_ability_casting.connect(func(a): DebugManager.on_ability_casting(entity, a))
+	signal_ability_cast.connect(func(a): DebugManager.on_ability_cast(entity, a))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

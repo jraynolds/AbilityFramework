@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0k54hvw4hcqe"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/grid/ability_info_hover.gd" id="1_3qla6"]
+
+[node name="AbilityInfoHover" type="Node2D"]
+script = ExtResource("1_3qla6")

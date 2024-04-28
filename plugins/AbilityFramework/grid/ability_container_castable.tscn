@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://bmdshe43g5t15"]
+
+[ext_resource type="PackedScene" uid="uid://brkrwsassy8li" path="res://plugins/AbilityFramework/grid/ability_container.tscn" id="1_f821l"]
+[ext_resource type="Texture2D" uid="uid://clnj7sjl5qw07" path="res://plugins/AbilityFramework/grid/textures/Dashed line transparent.png" id="2_brk7e"]
+[ext_resource type="Script" path="res://plugins/AbilityFramework/grid/ability_container_castable.gd" id="2_nnknp"]
+[ext_resource type="Shader" path="res://plugins/AbilityFramework/grid/shaders/scrolling_texture.gdshader" id="2_wmq54"]
+[ext_resource type="Texture2D" uid="uid://u1fjpe527x7s" path="res://plugins/AbilityFramework/grid/textures/White small.png" id="4_o6tb0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bgr3s"]
+shader = ExtResource("2_wmq54")
+
+[node name="AbilityContainerCastable" instance=ExtResource("1_f821l")]
+script = ExtResource("2_nnknp")
+key = null
+
+[node name="Line2D" type="Line2D" parent="AbilitySlot" index="1"]
+visible = false
+texture_repeat = 2
+material = SubResource("ShaderMaterial_bgr3s")
+points = PackedVector2Array(0, 0, 64, 0, 64, 64, 0, 64)
+closed = true
+width = 2.0
+texture = ExtResource("2_brk7e")
+texture_mode = 1
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="AbilitySlot" index="2"]
+visible = false
+modulate = Color(1, 1, 1, 0.588235)
+layout_mode = 2
+mouse_filter = 2
+value = 80.0
+fill_mode = 5
+texture_progress = ExtResource("4_o6tb0")
+tint_progress = Color(0, 0, 0, 1)
+
+[node name="Cooldown" type="Label" parent="AbilitySlot" index="3"]
+visible = false
+layout_mode = 2
+text = "1.5"
+horizontal_alignment = 1

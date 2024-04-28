@@ -1,10 +1,11 @@
 extends Node
 
+signal signal_loaded()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	_connect_signals()
-
+	signal_loaded.emit()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -12,16 +13,17 @@ func _process(delta):
 
 
 func _connect_signals():
-	CombatManager.player.abilities_component.signal_ability_casting.connect(
-		func(ability): _on_ability_casting(CombatManager.player, ability)
-	)
-	CombatManager.player.abilities_component.signal_ability_cast.connect(
-		func(ability): _on_ability_cast(CombatManager.player, ability)
-	)
-	CombatManager.enemy.abilities_component.signal_ability_casting.connect(
+	CombatManager.signal_player_changed.connect(_connect_to_combatant)
+	CombatManager.signal_enemy_changed.connect(_connect_to_combatant)
+	CombatManager.signal_combat_begun.connect(func(): print("Combat has begun!"))
+	CombatManager.signal_combat_ended.connect(func(): print("Combat has ended!"))
+
+func _connect_to_combatant(prev_combatant: Entity, new_combatant: Entity):
+	print("combatant %s loaded." % [ new_combatant.name ])
+	new_combatant.abilities_component.signal_ability_casting.connect(
 		func(ability): _on_ability_casting(CombatManager.enemy, ability)
 	)
-	CombatManager.enemy.abilities_component.signal_ability_cast.connect(
+	new_combatant.abilities_component.signal_ability_cast.connect(
 		func(ability): _on_ability_cast(CombatManager.enemy, ability)
 	)
 

@@ -15,11 +15,6 @@ enum ENTITY_STAT_TYPE { MaxHealth, Health, MaxMana, Mana, Attack, Level }
 
 signal signal_stat_changed(stat_type: ENTITY_STAT_TYPE, old_val, new_val)
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	_connect_signals()
-
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass

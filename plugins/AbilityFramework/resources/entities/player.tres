@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EntityResource" load_steps=7 format=3 uid="uid://clism5bboueja"]
+
+[ext_resource type="Script" path="res://plugins/AbilityFramework/resources/entities/entity_resource.gd" id="1_5m8ai"]
+[ext_resource type="Resource" uid="uid://dypivy2oaixbm" path="res://plugins/AbilityFramework/resources/abilities/fast_blade.tres" id="1_eian1"]
+[ext_resource type="Resource" uid="uid://dxypk8pl84uss" path="res://plugins/AbilityFramework/resources/abilities/riot_blade.tres" id="2_24axx"]
+[ext_resource type="Resource" uid="uid://dx2s7pxqbq2gc" path="res://plugins/AbilityFramework/resources/abilities/royal_authority.tres" id="3_71kav"]
+[ext_resource type="Resource" uid="uid://by0h4tscs2d1l" path="res://plugins/AbilityFramework/resources/abilities/atonement.tres" id="4_8yqt4"]
+[ext_resource type="Resource" uid="uid://bicxk3ob0abqu" path="res://plugins/AbilityFramework/resources/stats/enemy.tres" id="6_gni2y"]
+
+[resource]
+script = ExtResource("1_5m8ai")
+title = "Enemy"
+abilities = Array[Resource("res://plugins/AbilityFramework/resources/abilities/ability_resource.gd")]([ExtResource("1_eian1"), ExtResource("2_24axx"), ExtResource("3_71kav"), ExtResource("4_8yqt4")])
+stats = ExtResource("6_gni2y")

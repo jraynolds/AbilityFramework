@@ -4,7 +4,9 @@ class_name TransformLayerResource
 var stat_type : EntityComponentStats.ENTITY_STAT_TYPE
 var priority : int
 
-func _init(res: TransformLayerResource):
+func _init(res: TransformLayerResource = null):
+	if !res:
+		return
 	stat_type = res.stat_type
 	priority = res.priority
 

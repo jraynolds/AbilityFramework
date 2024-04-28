@@ -7,11 +7,6 @@ signal signal_transform_layer_added(layer: TransformLayerResource)
 signal signal_transform_layer_removed(layer: TransformLayerResource)
 signal signal_transform_layer_activated(layer: TransformLayerResource, previous_val: Object, new_val: Object)
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
